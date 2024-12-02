@@ -1,1 +1,301 @@
-/* Здесь должны быть стили для адаптивной верстки. Удалите этот комментарий при начала разработки */
+@media (min-width:375px) and (max-width: 960px) {
+    main, header, footer, .footer, .nav-menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        width: 100%;
+    }
+
+    nav{
+       display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3.865vw;
+    }
+
+    .footer {
+        position: static;
+    }
+
+    header, .nav-menu{
+        height: 19.324vw;
+    }
+
+    .users-btn, .menu-btn{
+        display: block;
+        width: 10.628vw;
+        height: 10.628vw;
+    }
+
+    .menu-btn-img, .user-btn-img{
+        width: 4.831vw;
+        height: 4.831vw;
+    }
+
+    .nav-menu a {
+        display: none;
+    }
+
+    .go-back-btn, .clone-btn {
+        display: none;
+    }
+
+    .circle-img{
+        display: none;
+    }
+
+    .fire-img{
+        max-width: 9.42vw;
+    }
+
+    .intro-banner{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .intro-left, .intro-right {
+        width: 100%;
+    }
+
+    .intro-left_logos {
+        height: 61.594vw;
+    }
+
+    .black-logo-img{
+        width: 93.944vw;
+        height: 55.556vw;
+    }
+
+    .white-logo-img{
+        max-width: 79.227vw;
+        height: 36.957vw;
+    }
+
+    .intro-running-line{
+        height: 19.082vw;
+    }
+
+    .running-line_text{
+        font-size: 4.106vw;
+        letter-spacing: 0;
+    }
+
+    .pepper-img {
+        width: 16.415vw;
+        height: 7.488vw;
+    }
+
+    .sauce-with-cactus{
+        height: 67.633vw;
+        border-bottom: 0.07vw solid black;
+    }
+
+    .sauce-with-cactus-img{
+        width: 94.203vw;
+        height: 61.836vw;
+    }
+
+    .intro-right_title {
+        border: none;
+        height: 25.121vw;
+        font-size: 7.246vw;
+        line-height: 9.662vw;
+        letter-spacing: 0.5px;
+    }
+
+    .sauce-with-hands{
+        width: 100%;
+        height: 107.246vw;
+        border-top: 0.07vw solid black;
+    }
+
+    .sauce-with-hands-img{
+        width: 94.203vw;
+        height: 101.449vw;
+    }
+
+    .scorpio-logo-left-img, .scorpio-logo-right-img{
+        width: 16.908vw;
+        height: 11.594vw;
+    }
+
+    .catalog{
+        height: 162.802vw;
+    }
+
+    .catalog_title{
+        height: 30.918vw;
+    }
+
+    h2{
+        font-size: 5.797vw;
+        line-height: 7.729vw;
+        letter-spacing: 0.5px;
+    }
+
+    .fire-icons{
+        padding-left: 3.14vw ;
+        padding-right: 3.14vw;
+        padding-top: 6.763vw;
+    }
+
+    .big-black-fire-logo-img{
+        width: 14.01vw;
+        height: 21.256vw;
+    }
+
+    .little-black-fire{
+        display: none;
+    }
+
+    .catalog_images{
+        width: 236.713vw;
+        height: 114.01vw;
+        bottom: 13.5vw;
+        transform: translateX(-29%);
+    }
+
+    .product-card{
+        width: 75.604vw;
+        margin-bottom: 20px;
+    }
+
+    .green-frame-img{
+        width: 75.604vw;
+    }
+
+    .taste-img{
+        width: 67.464vw ;
+        padding-top: 35vw;
+    }
+
+    .hot-sauce-img{
+        width: 67.464vw ;
+        height: 73.671vw;
+    }
+
+    .product-card_title{
+        padding-bottom: 46.821vw;
+    }
+
+    .card-subtitle{
+        font-size: 4.106vw;
+        line-height: 9.184vw;
+    }
+
+    .card-title{
+        font-size: 6.039vw;
+        margin-bottom: 7.729vw;
+        line-height: 6.783vw;
+    }
+
+    .running-line{
+        width: 270%;
+        height: 19.082vw;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .pouring-sauce{
+        height: 53.865vw;
+    }
+
+    .history-banner{
+        width: 100vw;
+        height: auto;
+    }
+
+    .pouring-sauce-img{
+        width:95.411vw ;
+        height: 48.068vw ;
+    }
+
+    .history-banner_main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history-left-column{
+        width: 100vw;
+        border-right: none;
+    }
+
+    .history-left-title{
+        width: 100vw;
+        height: 23.188vw;
+        justify-content: center;
+    }
+
+    .history-left-title-p{
+        font-size: 5.797vw;
+        width: 59vw;
+        height: 15.459vw;
+        line-height: 7.729vw;
+    }
+
+    .woman-testing-sauce-img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .area-with-logos-for-text-img{
+        width: 100vw;
+        height: 100.242vw;
+        border-top: 0.07vw solid black;
+    }
+
+    .history-right-title{
+        width: 58.454vw;
+        line-height: 2.899vw;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 2.899vw;
+        line-height: 2.899vw;
+        letter-spacing: 0.5px;
+    }
+
+    .logos-banner{
+        width: 100vw;
+        height: 54.348vw;
+    }
+
+    .footer{
+        height: 23.671vw;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer a {
+        padding-top: 4.831vw;
+    }
+
+    a{
+        font-size: 3.865vw;
+    }
+
+    address{
+        font-size: 4.348vw;
+    }
+
+    .address {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+    }
+
+    .address p {
+        padding-bottom: 4.831vw;
+    }
+
+    .inst-link {
+        padding-top: 4.831vw;
+    }
+}
