@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="./assets/fonts/font.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/adaptive.css">
+    <link rel="stylesheet" href="./styles/animations.css">
 </head>
 <body>
 <header>
-    <section class="nav-menu">
+    <section class="nav-menu desktop">
         <nav>
             <button class="go-back-btn"> go back </button>
-            <button class="menu-btn"> <img class = "menu-btn-img" src = "images/Menu.svg" alt = "menu button"> </button>
             <a href = "">story</a>
             <a href = "">shop</a>
-            <div class="nav-images">
+            <div class="nav-images desktop">
                 <picture>
                     <source srcset="images/red_circle.svg" media="(min-width : 1080px)">
                     <img class ="circle-img" src="images/red_circle.svg" alt = "red circle">
@@ -37,7 +37,34 @@
             <a href = ""> contact </a>
             <a href = ""> wholesale </a>
             <button class="clone-btn"> clone </button>
-            <button class="users-btn"> <img class = "user-btn-img" src = "images/Users.svg" alt = "users button"> </button>
+        </nav>
+    </section>
+    <section class="nav-menu mobile">
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">
+                    <img class="menu-btn-img"src="images/Menu.svg" alt="menu">
+                </label>
+                <label for="menu-toggle" class="close-btn">
+                    <img class="close-btn-img" src="images/Close.svg" alt="close">
+                </label>
+                <div class="dropdown_menu">
+                    <ul class="dropdown_menu_list">
+                        <li><a href="#">Story</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                    </ul>
+                </div>
+                <div class="nav-images mobile">
+                    <picture>
+                        <source srcset="images/fire.svg" media="(min-width : 1080px)">
+                        <img class="fire-img logo" src="images/fire.svg" alt="fire">
+                    </picture>
+                </div>
+            <button class="users-btn">
+                    <img class="user-btn-img" src="images/Users.svg" alt="users button">
+            </button>
         </nav>
     </section>
 </header>
@@ -55,6 +82,8 @@
                 </picture>
             </div>
             <div class="intro-running-line">
+                <div class="content1">
+                    <p class = "running-line_text"> put some fire in your belly </p>
                 <picture class="slogan pepper-img">
                     <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
                     <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
@@ -64,6 +93,17 @@
                     <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
                     <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
                 </picture>
+                    <p class = "running-line_text"> put some fire in your belly </p>
+                    <picture class="slogan pepper-img">
+                        <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
+                        <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
+                    </picture>
+                    <p class = "running-line_text"> put some fire in your belly </p>
+                    <picture class="slogan pepper-img">
+                        <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
+                        <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
+                    </picture>
+                </div>
             </div>
             <div class="sauce-with-cactus">
                 <picture>
@@ -158,25 +198,33 @@
         </div>
     </section>
     <div class="running-line">
-        <picture>
-            <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
-            <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
-        </picture>
-        <p class = "running-line_text"> put some fire in your belly </p>
-        <picture>
-            <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
-            <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
-        </picture>
-        <p class = "running-line_text"> put some fire in your belly </p>
-        <picture>
-            <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
-            <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
-        </picture>
-        <p class = "running-line_text"> put some fire in your belly </p>
-        <picture>
-            <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
-            <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
-        </picture>
+            <div class="content">
+                <p class="running-line_text">put some fire in your belly</p>
+                <picture>
+                    <img class="pepper-img logo" src="images/pepper.svg" alt="pepper">
+                </picture>
+                <p class="running-line_text">put some fire in your belly</p>
+                <picture>
+                    <img class="pepper-img logo" src="images/pepper.svg" alt="pepper">
+                </picture>
+                <p class="running-line_text">put some fire in your belly</p>
+                <picture>
+                    <img class="pepper-img logo" src="images/pepper.svg" alt="pepper">
+                </picture>
+                <p class="running-line_text">put some fire in your belly</p>
+                <picture>
+                    <img class="pepper-img logo" src="images/pepper.svg" alt="pepper">
+                </picture>
+                <p class="running-line_text">put some fire in your belly</p>
+                <picture>
+                    <img class="pepper-img logo" src="images/pepper.svg" alt="pepper">
+                </picture>
+                <p class="running-line_text">put some fire in your belly</p>
+                <picture>
+                    <img class="pepper-img logo" src="images/pepper.svg" alt="pepper">
+                </picture>
+                <p class="running-line_text">put some fire in your belly</p>
+            </div>
     </div>
     <section class = "history-banner">
         <div class="pouring-sauce">
@@ -211,6 +259,7 @@
         </div>
     </section>
     <div class="running-line">
+        <div class="content">
         <picture>
             <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
             <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
@@ -226,6 +275,22 @@
             <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
         </picture>
         <p class = "running-line_text"> download our media kit </p>
+            <picture>
+                <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
+                <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
+            </picture>
+            <p class = "running-line_text"> contact for partnership opportunites </p>
+            <picture>
+                <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
+                <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
+            </picture>
+            <p class = "running-line_text"> download our media kit </p>
+            <picture>
+                <source srcset="images/pepper.svg"  media = "(min-width: 1080px)">
+                <img class = "pepper-img logo" src = "images/pepper.svg" alt = "pepper">
+            </picture>
+            <p class = "running-line_text"> contact for partnership opportunites </p>
+    </div>
     </div>
     <section class = "logos-banner">
         <div class="logos-banner_container">

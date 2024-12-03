@@ -9,7 +9,7 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, .nav-menu a, .nav-menu{
+    body, .nav-menu a, .nav-menu.desktop, .nav-menu.mobile, .dropdown_menu {
         background: #373737;
         color:#f4f4f4;
     }
@@ -28,7 +28,7 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
-    body, .nav-menu{
+    body, .nav-menu.desktop, .nav-menu.mobile, .nav-menu.desktop, .nav-menu.mobile, .dropdown_menu {
         background: #f4f4f4;
         color: #000000;
     }
@@ -38,6 +38,12 @@ body {
     }
     .logo-special {
        filter: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scrolling_text_animation{
+        animation: none;
     }
 }
 
