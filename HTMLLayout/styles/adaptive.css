@@ -62,7 +62,7 @@
     }
 
     .dropdown_menu_list li a {
-        font-size: 3.38vw;
+        font-size: 0.875rem;
         line-height: 5.07vw;
     }
 
@@ -122,6 +122,10 @@
     .intro-left, .intro-right {
         width: 100%;
     }
+    
+    h1 {
+        font-size: 1.875rem;
+    }
 
     .intro-left_logos {
         height: 61.594vw;
@@ -147,7 +151,7 @@
     }
 
     .running-line_text{
-        font-size: 4.106vw;
+        font-size: 1.0625rem;
         letter-spacing: 0.5px;
     }
 
@@ -169,7 +173,6 @@
     .intro-right_title {
         border: none;
         height: 25.121vw;
-        font-size: 7.246vw;
         line-height: 9.662vw;
         letter-spacing: 0.5px;
     }
@@ -200,7 +203,7 @@
     }
 
     h2{
-        font-size: 5.797vw;
+        font-size: 1.5rem;
         line-height: 7.729vw;
         letter-spacing: 0.5px;
     }
@@ -251,12 +254,12 @@
     }
 
     .card-subtitle{
-        font-size: 4.106vw;
+        font-size: 1.0625rem;
         line-height: 9.184vw;
     }
 
     .card-title{
-        font-size: 6.039vw;
+        font-size: 1.5625rem;
         margin-bottom: 7.729vw;
         line-height: 6.783vw;
     }
@@ -306,7 +309,7 @@
     }
 
     .history-left-title-p{
-        font-size: 5.797vw;
+        font-size: 1.5rem;
         width: 59vw;
         height: 15.459vw;
         line-height: 7.729vw;
@@ -331,7 +334,7 @@
     }
 
     p{
-        font-size: 2.899vw;
+        font-size: 0.75rem;
         line-height: 2.899vw;
         letter-spacing: 0.5px;
     }
@@ -352,12 +355,12 @@
         padding-top: 4.831vw;
     }
 
-    a{
-        font-size: 3.865vw;
+    .privacy-link {
+        font-size: 0.9375rem;
     }
 
     address{
-        font-size: 4.348vw;
+        font-size: 1rem;
     }
 
     .address {
@@ -368,9 +371,54 @@
 
     .address p {
         padding-bottom: 4.831vw;
+        font-size: 0.75rem;
     }
 
     .inst-link {
         padding-top: 4.831vw;
+    }
+}
+
+@media (min-width:960px) and (max-width:1200px) {
+    nav, button {
+        font-size: 0.875rem;
+    }
+
+    .intro-right_title h1{
+        font-size: 2.8125rem;
+    }
+
+    .running-line_text {
+        font-size: 1.0625rem;
+    }
+
+    .catalog_title h2{
+        font-size: 3.4375rem;
+    }
+
+    .card-subtitle {
+        font-size: 1.0625rem;
+    }
+
+    .card-title {
+        font-size: 1.5625rem;
+    }
+
+    .history-left-title-p {
+        font-size: 2rem;
+    }
+
+    .history-right-title {
+        font-size: 0.875rem;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    .privacy-link {
+        font-size: 0.9375rem;
+    }
+
+    .address {
+        font-size: 0.9375rem;
     }
 }
