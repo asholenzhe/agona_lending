@@ -1,1 +1,424 @@
-/* Здесь должны быть стили для адаптивной верстки. Удалите этот комментарий при начала разработки */
+@media (min-width:375px) and (max-width: 960px) {
+    main, header, footer, .footer, .nav-menu.mobile {
+        width: 100%;
+        margin: 0;
+    }
+
+    header, .nav-menu.mobile{
+        height: 19.324vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        width: 100%;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3.865vw;
+    }
+
+    .nav-menu.mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .nav-menu.desktop{
+        display: none;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .dropdown_menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 100;
+        width: 91.8vw;
+        height: 37vw;
+        padding: 3.86vw;
+        border-top: 0.07vw solid black;
+        border-bottom: 0.07vw solid black;
+    }
+
+    .dropdown_menu_list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown_menu_list li {
+        padding: 2.42vw 0;
+    }
+
+    .dropdown_menu_list li a {
+        font-size: 0.875rem;
+        line-height: 5.07vw;
+    }
+
+    .menu-toggle:checked ~ .dropdown_menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-btn, .close-btn {
+        cursor: pointer;
+        background-color: #FB4B4D;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .menu-btn {
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .close-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .users-btn, .menu-btn, .close-btn{
+        width: 10.628vw;
+        height: 10.628vw;
+    }
+
+    .user-btn-img, .menu-btn-img, .close-btn-img {
+        width: 4.831vw;
+        height: 4.831vw;
+    }
+
+    .fire-img{
+        max-width: 9.42vw;
+    }
+
+    .intro-banner{
+        flex-direction: column;
+        width: 100%;
+        border-top: 0.07vw solid black;
+        border-left:none;
+        border-right:none;
+    }
+
+    .intro-left, .intro-right {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    .intro-left_logos {
+        height: 61.594vw;
+    }
+
+    .black-logo-img{
+        width: 93.944vw;
+        height: 55.556vw;
+    }
+
+    .white-logo-img{
+        max-width: 79.227vw;
+        height: 36.957vw;
+    }
+
+    .intro-running-line{
+        height: 19.082vw;
+    }
+
+    .content{
+        animation-duration: 10s;
+        gap: 1.93vw;
+    }
+
+    .running-line_text{
+        font-size: 1.0625rem;
+        letter-spacing: 0.5px;
+    }
+
+    .pepper-img {
+        width: 16.415vw;
+        height: 7.488vw;
+    }
+
+    .sauce-with-cactus{
+        height: 67.633vw;
+        border-bottom: 0.07vw solid black;
+    }
+
+    .sauce-with-cactus-img{
+        width: 94.203vw;
+        height: 61.836vw;
+    }
+
+    .intro-right_title {
+        border: none;
+        height: 25.121vw;
+        line-height: 9.662vw;
+        letter-spacing: 0.5px;
+    }
+
+    .sauce-with-hands{
+        width: 100%;
+        height: 107.246vw;
+        border-top: 0.07vw solid black;
+    }
+
+    .sauce-with-hands-img{
+        width: 94.203vw;
+        height: 101.449vw;
+    }
+
+    .scorpio-logo-left-img, .scorpio-logo-right-img{
+        width: 16.908vw;
+        height: 11.594vw;
+    }
+
+    .catalog{
+        height: 162.802vw;
+        border: none;
+    }
+
+    .catalog_title{
+        height: 30.918vw;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        line-height: 7.729vw;
+        letter-spacing: 0.5px;
+    }
+
+    .fire-icons{
+        padding-left: 3.14vw ;
+        padding-right: 3.14vw;
+        padding-top: 6.763vw;
+    }
+
+    .big-black-fire-logo-img{
+        width: 14.01vw;
+        height: 21.256vw;
+    }
+
+    .little-black-fire{
+        display: none;
+    }
+
+    .catalog_images{
+        width: 236.713vw;
+        height: 114.01vw;
+        bottom: 13.5vw;
+        transform: translateX(-29%);
+    }
+
+    .product-card{
+        width: 75.604vw;
+        margin-bottom: 20px;
+    }
+
+    .green-frame-img{
+        width: 75.604vw;
+    }
+
+    .taste-img{
+        width: 67.464vw ;
+        padding-top: 35vw;
+    }
+
+    .hot-sauce-img{
+        width: 67.464vw ;
+        height: 73.671vw;
+    }
+
+    .product-card_title{
+        padding-bottom: 46.821vw;
+    }
+
+    .card-subtitle{
+        font-size: 1.0625rem;
+        line-height: 9.184vw;
+    }
+
+    .card-title{
+        font-size: 1.5625rem;
+        margin-bottom: 7.729vw;
+        line-height: 6.783vw;
+    }
+
+    .running-line{
+        width: 270%;
+        height: 19.082vw;
+        font-size: 2vw;
+        text-align: center;
+        border: 0.07vw solid black;
+        border-right: none;
+        border-left: none;
+    }
+
+    .pouring-sauce{
+        height: 53.865vw;
+        border: 0.07vw solid black;
+        border-left: none;
+        border-right: none;
+    }
+
+    .history-banner{
+        width: 100vw;
+        height: auto;
+    }
+
+    .pouring-sauce-img{
+        width:95.411vw ;
+        height: 48.068vw ;
+    }
+
+    .history-banner_main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history-left-column{
+        width: 100vw;
+        border-right: none;
+    }
+
+    .history-left-title{
+        width: 100vw;
+        height: 23.188vw;
+        justify-content: center;
+        border-left:none;
+    }
+
+    .history-left-title-p{
+        font-size: 1.5rem;
+        width: 59vw;
+        height: 15.459vw;
+        line-height: 7.729vw;
+    }
+
+    .woman-testing-sauce-img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .area-with-logos-for-text-img{
+        width: 100vw;
+        height: 100.242vw;
+        border-top: 0.07vw solid black;
+    }
+
+    .history-right-title{
+        width: 58.454vw;
+        line-height: 2.899vw;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 0.75rem;
+        line-height: 2.899vw;
+        letter-spacing: 0.5px;
+    }
+
+    .logos-banner{
+        width: 100vw;
+        height: 54.348vw;
+    }
+
+    .footer{
+        position: static;
+        height: 23.671vw;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer a {
+        padding-top: 4.831vw;
+    }
+
+    .privacy-link {
+        font-size: 0.9375rem;
+    }
+
+    address{
+        font-size: 1rem;
+    }
+
+    .address {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+    }
+
+    .address p {
+        padding-bottom: 4.831vw;
+        font-size: 0.75rem;
+    }
+
+    .inst-link {
+        padding-top: 4.831vw;
+    }
+}
+
+@media (min-width:960px) and (max-width:1200px) {
+    nav, button {
+        font-size: 0.875rem;
+    }
+
+    .intro-right_title h1{
+        font-size: 2.8125rem;
+    }
+
+    .running-line_text {
+        font-size: 1.0625rem;
+    }
+
+    .catalog_title h2{
+        font-size: 3.4375rem;
+    }
+
+    .card-subtitle {
+        font-size: 1.0625rem;
+    }
+
+    .card-title {
+        font-size: 1.5625rem;
+    }
+
+    .history-left-title-p {
+        font-size: 2rem;
+    }
+
+    .history-right-title {
+        font-size: 0.875rem;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    .privacy-link {
+        font-size: 0.9375rem;
+    }
+
+    .address {
+        font-size: 0.9375rem;
+    }
+}

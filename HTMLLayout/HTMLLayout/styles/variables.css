@@ -7,3 +7,46 @@ body {
     background-color: var(--bg);
     color: var(--text);
 }
+
+@media (prefers-color-scheme: dark) {
+    body, .nav-menu a, .nav-menu.desktop, .nav-menu.mobile, .dropdown_menu {
+        background: #373737;
+        color:#f4f4f4;
+    }
+
+    .product-card_title, .address p{
+        color: #000000;
+    }
+
+    .logo{
+        filter: invert(90%);
+    }
+
+    .logo-special{
+        filter: invert(75%);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body, .nav-menu.desktop, .nav-menu.mobile, .nav-menu.desktop, .nav-menu.mobile, .dropdown_menu {
+        background: #f4f4f4;
+        color: #000000;
+    }
+
+    .logo{
+        filter: none;
+    }
+    .logo-special {
+       filter: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scrolling_text_animation{
+        animation: none;
+    }
+}
+
+
+
+
